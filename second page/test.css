@@ -3,17 +3,28 @@
     padding: 0;
 }
 
+.container {
+    width: 500px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin: 38px;
 }
 
+.info h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.info p {
+    text-align: center;
+    font-size: 20px;
+}
+
 .ques-box {
-    width: 30vw;
-    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -22,6 +33,7 @@
 
 ul {
     list-style-type: decimal;
+    font-size: 20px
 }
 
 button {
@@ -75,5 +87,25 @@ button:before {
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    
+}
+
+@media screen and (max-width:450px){
+    .container {
+        width: 85%;
+    }
+
+    .option {
+        grid-template-columns: 1fr;
+    }
+
+    .option button{
+        /* font-size: 16px; */
+    }
+    
+    .question p {
+        /* font-size: 20px; */
+    }
+
     
 }
