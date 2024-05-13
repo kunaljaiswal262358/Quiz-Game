@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+.nav {
+    padding: 16px 0px;
+    background-color: #8B322C;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    margin-top: 80px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.box {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.langPhoto {
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 200px;
+    width: 100%;
+}
+
+.General-Knowledge .langPhoto {
+    background-image: url(gk.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.Sports .langPhoto {
+    background-image: url(sports.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.modeclass {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modeclass select {
+    height: 24px;
+    border-radius: 5px;
+}
+
+.btn {
+    border: 1px solid gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
