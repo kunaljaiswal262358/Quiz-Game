@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-body {
-}
-
 .nav {
     padding: 16px 0px;
     background-color: #8B322C;
@@ -19,8 +16,9 @@ h1 {
 }
 
 .container {
-    margin-top: 80px;
+    margin: 20vh;
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     justify-content: space-around;
 }
@@ -45,12 +43,12 @@ h1 {
 }
 
 .General-Knowledge .langPhoto {
-    background-image: url(gk.jpg);
+    background-image: url(images/gk.jpg);
     background-size: cover;
     background-position: bottom;
 }
 .Sports .langPhoto {
-    background-image: url(sports.jpg);
+    background-image: url(images/sports.jpg);
     background-size: cover;
     background-position: bottom;
 }
@@ -81,3 +79,20 @@ h1 {
     color: black;
 }
 
+@media screen and (max-width: 450px){
+    .container {
+        margin: 8vh 5vh;
+    }
+    h1 {
+        font-size: 40px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .langPhoto {
+        height: 240px;
+        
+    }
+}

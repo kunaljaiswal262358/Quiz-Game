@@ -12,7 +12,7 @@
 }
 
 .ques-box {
-    width: 24vw;
+    width: 30vw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ button:before {
 
 .option {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
@@ -54,6 +54,8 @@ button:before {
     cursor: pointer;
     padding: 7px;
     text-align: start;
+    border-radius: 12px;
+    background-color: white;
 }
 
 .btn {
