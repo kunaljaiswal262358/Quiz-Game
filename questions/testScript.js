@@ -29,7 +29,7 @@ async function getQuestion(){
         let option = document.querySelector(".ques-box").getElementsByTagName("ul")[0];
         let answers = [];
         let keys = ["a","b","c","d"];
-        let randomNum = Math.floor(Math.random()*4)-1;
+        let randomNum = Math.floor(Math.random()*4);
 
         let count = 0;
         for (let i = 0; i < 4; i++) {
@@ -100,7 +100,7 @@ const tickOption = () => {
                     elem.style.backgroundColor = "#efefef"
                     elem.style.color = "black"
                 })
-                evt.target.style.backgroundColor = "#6c6767"
+                evt.target.style.backgroundColor = "#254059"
                 evt.target.style.color = "white"
                 clickOption[i] = j;
                 if(evt.target.value === "true"){

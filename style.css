@@ -3,10 +3,38 @@
     padding: 0;
 }
 
-.nav {
-    padding: 16px 0px;
-    background-color: #8B322C;
-    margin-bottom: 20px;
+body {
+    background-color: #12221c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: #254539;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
 }
 
 h1 {
@@ -15,13 +43,18 @@ h1 {
     color: white;
 }
 
+.title  h1{
+    margin: 20px 0;
+}
+
 .container {
-    margin: 20vh;
+    margin: 50px 0;
     display: flex;
-    flex-wrap: wrap;
     gap: 50px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 
 .box {
     border: 1px solid gray;
@@ -32,6 +65,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    color: white;
 }
 
 .langPhoto {
@@ -76,23 +110,13 @@ h1 {
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(244, 240, 240);
+    padding: 12px 0;
 }
 
-@media screen and (max-width: 450px){
-    .container {
-        margin: 8vh 5vh;
-    }
-    h1 {
-        font-size: 40px;
-    }
-
-    .box {
-        width: 100%;
-    }
-
-    .langPhoto {
-        height: 240px;
-        
+@media only screen and (max-width: 430px) {
+    title h1 {
+        font-size: 0.8rem;
     }
 }
+
