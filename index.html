@@ -11,10 +11,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Quiz Play</div>
+            <a href="/index.html" class="logo">Quiz Play</a>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a class="active" href="/">Home</a>
                 </li>
                 <li>
                     <a href="#">About</a>
@@ -27,11 +27,12 @@
             <h1>Play Quiz Game</h1>
         </div>
         <div class="container">
-            <div class="box General-Knowledge">
+            <div data-category="General Knowledge"  class="box">
                 <div class="langPhoto">
+                    <img src="images/gk.jpg" alt="">
                 </div>
                 <div class="modeclass">
-                    <label for="medium">Medium</label>
+                    <label for="medium">Level</label>
                     <select name="mode" id="mode">
                         <option value="easy">Easy</option>
                         <option value="medium">Medium</option>
@@ -40,18 +41,19 @@
                 </div>
                 <a href="/questions/test.html" class="btn">Play Quiz</a>
             </div>
-            <div class="box Sports">
+            <div data-category="Sports" class="box">
                 <div class="langPhoto">
+                    <img src="images/sports.jpg" alt="">
                 </div>
                 <div class="modeclass">
-                    <label for="medium">Medium</label>
+                    <label for="medium">Level</label>
                     <select name="mode" id="mode">
                         <option value="easy">Easy</option>
                         <option value="medium">Medium</option>
                         <option value="hard">Hard</option>
                     </select>
                 </div>
-                <a href="questions/test.html" class="btn">Play Quiz</a>
+                <a href="/questions/test.html" class="btn">Play Quiz</a>
             </div>
         </div>
     </main>

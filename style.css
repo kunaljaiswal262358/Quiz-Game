@@ -17,9 +17,15 @@ nav {
     color: white;
 }
 
+nav .active {
+    font-weight: 700;
+}
+
 .logo {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
 }
 
 nav ul {
@@ -53,70 +59,67 @@ h1 {
     gap: 50px;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0 10px;
 }
 
 
 .box {
-    border: 1px solid gray;
+    border: 1px solid #254539;
+    box-shadow: 0 0 10px 0px #254539;
     border-radius: 5px;
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    overflow: hidden;
+    width: 400px;
     color: white;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
-.langPhoto {
-    border: 1px solid gray;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 200px;
+.box:hover {
+    transform: scale(1.05);
+}
+
+.langPhoto img {
     width: 100%;
-}
-
-.General-Knowledge .langPhoto {
-    background-image: url(images/gk.jpg);
-    background-size: cover;
-    background-position: bottom;
-}
-.Sports .langPhoto {
-    background-image: url(images/sports.jpg);
-    background-size: cover;
-    background-position: bottom;
 }
 
 .modeclass {
     font-size: 20px;
-    display: flex;
-    justify-content: space-around;
+    padding-left: 10px;
+    margin-top: 10px;
+    color: #fff;
 }
 
 .modeclass select {
     height: 24px;
     border-radius: 5px;
+    outline: none;
 }
 
 .btn {
-    border: 1px solid gray;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 100%;
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
     color: rgb(244, 240, 240);
-    padding: 12px 0;
+    background: #254539;
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s;
 }
 
-@media only screen and (max-width: 430px) {
-    title h1 {
-        font-size: 0.8rem;
+.btn:hover {
+    background-color: #275444;
+}
+
+@media screen and (max-width: 768px) {
+    .title h1 {
+        font-size: 3rem;
     }
 }
 
